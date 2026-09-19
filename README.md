@@ -3,4 +3,4 @@
 
 Positive_data = 2956
 
-Negative_data = 18979
+Negative_data = 20974
