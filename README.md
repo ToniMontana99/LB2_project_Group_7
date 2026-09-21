@@ -1,8 +1,7 @@
 # LB2_project_Group_7
 
 
-Positive_data = 2956
-
+Positive_data = 2956<br>
 Negative_data = 20974
 
 
