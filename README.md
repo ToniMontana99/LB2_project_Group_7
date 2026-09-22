@@ -5,8 +5,8 @@ Retrieved data from UniProt with a specific query (first filtering) and then pol
 
 | Dataset        | Entries    |
 |----------------|-----------:|
-|  Positive     | **2,956**  |
-|  Negative     | **20,974** |
+| (+) Positive   | **2,956**  |
+| (-) Negative   | **20,974** |
 
 ## Data preparation
 Results in .fasta format were aligned and clustered with mmseqs, and one representative of each cluster was copied in a new .tsv file and labelled with "0" (negatives) or "1" (positives).<br>
