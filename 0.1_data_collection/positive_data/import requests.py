@@ -67,6 +67,7 @@ out = pd.DataFrame({
     'kingdom':       clean['Taxonomic lineage'].apply(kingdom),
     'length':        clean['Length'].astype(int),
     'cleavage_site': clean['Signal peptide'].apply(cleavage_site),
+    'sequence':      clean['Sequence']     
 })
 
 out.to_csv('positive_data.tsv', sep='\t', index=False)
