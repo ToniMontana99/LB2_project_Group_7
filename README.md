@@ -2,8 +2,12 @@
 
 ## Data collection
 Retrieved data from UniProt with a specific query (first filtering) and then polished the .tsv datasets from entries whose cleavage was absent or unknown (second filtering). The final collection of data consisted of these numbers of entries:<br>
-Positive_data = 2956<br>
-Negative_data = 20974<br>
+
+| Dataset        | Entries    |
+|----------------|-----------:|
+| ✅ Positive     | **2,956**  |
+| ❌ Negative     | **20,974** |
+| **Total**      | **23,930** |
 
 ## Data preparation
 Results in .fasta format were aligned and clustered with mmseqs, and one representative of each cluster was copied in a new .tsv file and labelled with "0" (negatives) or "1" (positives).<br>
