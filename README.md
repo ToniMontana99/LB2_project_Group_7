@@ -31,3 +31,38 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 
 
 ## Data visualization
+
+## Data analysis
+
+### Protein length distribution
+| Training | Benchmark |
+|---|---|
+| ![](0.3_data_analysis/plot1_protein_length_distribution_training.png) | ![](0.3_data_analysis/plot1_protein_length_distribution_benchmarking.png) |
+
+### Signal peptide length distribution
+| Training | Benchmark |
+|---|---|
+| ![](0.3_data_analysis/plot2_SP_length_distribution_training.png) | ![](0.3_data_analysis/plot2_SP_length_distribution_benchmarking.png) |
+
+### Amino-acid composition (SP vs SwissProt)
+| Training | Benchmark |
+|---|---|
+| ![](0.3_data_analysis/plot3_aa_composition_training.png) | ![](0.3_data_analysis/plot3_aa_composition_benchmarking.png) |
+
+### Taxonomic classification — kingdom
+| Training (positives) | Training (negatives) |
+|---|---|
+| ![](0.3_data_analysis/plot4a_kingdoms_training_pos.png) | ![](0.3_data_analysis/plot4a_kingdoms_training_neg.png) |
+
+| Benchmark (positives) | Benchmark (negatives) |
+|---|---|
+| ![](0.3_data_analysis/plot4c_kingdoms_benchmarking_pos.png) | ![](0.3_data_analysis/plot4c_kingdoms_benchmarking_neg.png) |
+
+### Taxonomic classification — species
+| Training (positives) | Training (negatives) |
+|---|---|
+| ![](0.3_data_analysis/plot4b_species_training_pos.png) | ![](0.3_data_analysis/plot4b_species_training_neg.png) |
+
+| Benchmark (positives) | Benchmark (negatives) |
+|---|---|
+| ![](0.3_data_analysis/plot4d_species_benchmarking_pos.png) | ![](0.3_data_analysis/plot4d_species_benchmarking_neg.png) |
