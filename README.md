@@ -8,6 +8,8 @@ Retrieved data from UniProt with a specific query (first filtering) and then pol
 | (+) Positive | **2,956**  | 12.4%  |
 | (-) Negative | **20,974** | 87.6%  |
 
+
+
 ## Data preparation
 Results in .fasta format were aligned and clustered with mmseqs, and one representative of each cluster was copied in a new .tsv file and labelled with "0" (negatives) or "1" (positives).<br>
 The representatives were shuffled and then split between the training (80% of positives and 80% of negatives) and the benchmark dataset (remaining 20% of both).<br>
@@ -25,3 +27,7 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 | sub_5     | 176       | 1453      | 1629       | 16.0%        |
 | bench     | 220       | 1816      | 2036       | 20.0%        |
 | **Total** | **1102**  | **9082**  | **10184**  |              |
+
+
+
+## Data visualization
