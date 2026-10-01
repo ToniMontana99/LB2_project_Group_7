@@ -50,9 +50,11 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 | ![](0.3_data_analysis/plot3_aa_composition_training.png) | ![](0.3_data_analysis/plot3_aa_composition_benchmarking.png) |
 
 ### Taxonomic classification — kingdom
-| Training (positives) | Training (negatives) |
-|---|---|
-| ![](0.3_data_analysis/plot4a_kingdoms_training_pos.png) | ![](0.3_data_analysis/plot4a_kingdoms_training_neg.png) |
+
+<p align="center">
+  <img src="0.3_data_analysis/plot4a_kingdoms_training_pos.png" width="45%">
+  <img src="0.3_data_analysis/plot4a_kingdoms_training_neg.png" width="45%">
+</p>
 
 | Benchmark (positives) | Benchmark (negatives) |
 |---|---|
