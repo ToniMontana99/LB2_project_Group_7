@@ -32,8 +32,6 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 
 ## Data visualization
 
-## Data analysis
-
 ### Protein length distribution
 | Training | Benchmark |
 |---|---|
