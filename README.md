@@ -44,7 +44,7 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 |---|---|
 | ![](0.3_data_analysis/plot2_SP_length_distribution_training.png) | ![](0.3_data_analysis/plot2_SP_length_distribution_benchmarking.png) |
 
-### Amino-acid composition (SP vs SwissProt)
+### Amino-acid composition (SP vs Background)
 | Training | Benchmark |
 |---|---|
 | ![](0.3_data_analysis/plot3_aa_composition_training.png) | ![](0.3_data_analysis/plot3_aa_composition_benchmarking.png) |
