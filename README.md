@@ -37,7 +37,7 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 |---|---|
 | ![](0.3_data_analysis/plot1_protein_length_distribution_training.png) | ![](0.3_data_analysis/plot1_protein_length_distribution_benchmarking.png) |
 
-### Signal peptide length distribution
+### Signal peptide length distribution ~ positives
 | Training | Benchmark |
 |---|---|
 | ![](0.3_data_analysis/plot2_SP_length_distribution_training.png) | ![](0.3_data_analysis/plot2_SP_length_distribution_benchmarking.png) |
