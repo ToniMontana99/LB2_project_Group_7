@@ -32,8 +32,6 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 
 ## Data visualization
 
-link collab for plots: https://colab.research.google.com/drive/1RtTVAHNrGOtgCOZhXsUyftc6QDVqK5pc?usp=sharing
-
 ### Protein length distribution
 | Training | Benchmark |
 |---|---|
