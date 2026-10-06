@@ -67,7 +67,7 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 
 
 
-## Von Heijne method — 5-fold cross-validation
+## Von Heijne method ~ 5_fold cross-validation
 
 
 | Metric | Mean ± SE |
