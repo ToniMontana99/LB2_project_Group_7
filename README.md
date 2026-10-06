@@ -1,7 +1,7 @@
 # LB2_project_Group_7
 
 ## Data collection
-Retrieved data from UniProt with a specific query (first filtering) and then polished the .tsv datasets from entries whose cleavage was absent or unknown (second filtering). The final collection of data consisted of these numbers of entries:<br>
+Data were retrieved from UniProt with a specific query (first filtering) and then polished the .tsv datasets from entries whose cleavage was absent or unknown (second filtering). The final collection of data consisted of these numbers of entries:<br>
 
 | Dataset  | Entries    | %      |
 |----------|-----------:|-------:|
