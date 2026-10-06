@@ -64,3 +64,26 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 | Benchmark (positives) | Benchmark (negatives) |
 |---|---|
 | ![](0.3_data_analysis/plot4d_species_benchmarking_pos.png) | ![](0.3_data_analysis/plot4d_species_benchmarking_neg.png) |
+
+
+
+## Von Heijne method — 5-fold cross-validation
+
+
+| Metric | Mean ± SE |
+|-----------|-----------------|
+| Precision | 0.6953 ± 0.0322 |
+| Recall | 0.7426 ± 0.0144 |
+| Accuracy | 0.9358 ± 0.0061 |
+| MCC | 0.6819 ± 0.0217 |
+| F1 | 0.7163 ± 0.0194 |
+
+### Per-run results
+
+| Run | Threshold | TP | FP | TN | FN | Precision | Recall | Accuracy | MCC | F1 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 6.568 | 123 | 50 | 1404 | 54 | 0.711 | 0.695 | 0.936 | 0.667 | 0.703 |
+| 2 | 5.691 | 130 | 96 | 1357 | 46 | 0.575 | 0.739 | 0.913 | 0.604 | 0.647 |
+| 3 | 5.964 | 139 | 62 | 1391 | 38 | 0.692 | 0.785 | 0.939 | 0.703 | 0.735 |
+| 4 | 6.576 | 132 | 42 | 1411 | 44 | 0.759 | 0.750 | 0.947 | 0.725 | 0.754 |
+| 5 | 6.445 | 131 | 46 | 1407 | 45 | 0.740 | 0.744 | 0.944 | 0.711 | 0.742 |
