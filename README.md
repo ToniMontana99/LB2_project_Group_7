@@ -66,6 +66,11 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 | ![](0.3_data_analysis/plot4d_species_benchmarking_pos.png) | ![](0.3_data_analysis/plot4d_species_benchmarking_neg.png) |
 
 
+### Overview
+
+The **von Heijne method** is a statistical sequence-profiling framework for detecting and discriminating signal peptide cleavage junctions in primary protein structures and to model the amino-acid distribution around known cleavage sites.
+
+The model is parameterized as a Position-Specific Weight Matrix (**PSWM**) estimated across a fixed asymmetric local window spanning coordinates **[-13, +2]**. Positional emission probabilities $p_{i,a}$ across validated cleavage sites are compared against an empirical background amino acid distribution $q_a$ derived from Swiss-Prot, yielding position-dependent log-odds weights. By sliding this scoring window along a target sequence, the model predicts cleavage sites at the positions that get the highest scores.
 
 ## Von Heijne method ~ 5_fold cross-validation
 
