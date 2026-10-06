@@ -80,7 +80,7 @@ By sliding this scoring window across the first 90 N-terminal residues of a targ
 
 ## 5-Fold Cross-Validation Workflow
 
-To calibrate the decision threshold and evaluate classification performance without data leakage, a 5-fold cross-validation scheme was performed. For each run $j \in \{1, \dots, 5\}$:
+To calibrate the decision threshold and evaluate classification performance without data leakage, a 5-fold cross-validation scheme was performed. For each run (1,2,3,4,5):
 - **Training (3 folds, 60%):** Cleavage contexts of positive sequences were used to build a fold-specific PSWM.
 - **Validation (1 fold, 20%):** Scored with the PSWM to determine the optimal decision threshold by maximizing the $F_1$-score on the Precision-Recall curve.
 - **Test (1 fold, 20%):** Evaluated strictly on unseen sequences using the calibrated threshold to compute test metrics.
@@ -111,9 +111,8 @@ The summary of test metrics across all 5 runs ($\text{mean} \pm \text{standard e
 
 ## Final PSWM Model
 
-Once the approach was validated, the definitive matrix (`pswm_final.tsv`) was trained on **100% of the positive training contexts** to minimize estimation variance for rare amino acids. 
-
-The operational decision threshold was set to the mean optimal threshold obtained during cross-validation:
+Once the approach was validated, the definitive matrix (`pswm_final.tsv`) was trained on all the **positive training contexts** to reduce statistical noise for rare amino acids.
+The decision threshold was set to the average threshold found across the 5 cross-validation runs:
 
 $$\theta_{\text{final}} = \frac{6.568 + 5.691 + 5.964 + 6.576 + 6.445}{5} = \mathbf{6.2488}$$
 
