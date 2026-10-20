@@ -148,6 +148,8 @@ sequences → features → Random Forest ranking (top-k) → standardization →
 
 ### Feature extraction (D = 24)
 
+Each protein is encoded by 24 features computed on its N-terminal region: the amino-acid composition of the first *n* residues, three hydrophobicity features and the charge of the n-region.
+
 | Feature | Count | Biological rationale |
 | :--- | :---: | :--- |
 | Amino-acid composition of the first *n* residues | 20 | SPs are enriched in non-polar residues (L, A, V) and depleted in charged ones |
