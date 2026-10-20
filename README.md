@@ -8,7 +8,7 @@ Data were retrieved from UniProt with a specific query (first filtering) and the
 | (+) Positive | **2,956**  | 12.4%  |
 | (-) Negative | **20,974** | 87.6%  |
 
-Code and results are in `0.1_data_collection/`.
+Code and results are in [`0.1_data_collection/`](0.1_data_collection/).
 
 ## Data preparation
 Results in .fasta format were aligned and clustered with mmseqs, and one representative of each cluster was copied in a new .tsv file and labelled with "0" (negatives) or "1" (positives).<br>
@@ -28,7 +28,7 @@ The previous labelling was useful to split the training dataset in 5 subsets, ea
 | bench     | 220       | 1816      | 2036       | 20.0%        |
 | **Total** | **1102**  | **9082**  | **10184**  |              |
 
-Code and results are in `0.2_data_pre_processing/`.
+Code and results are in [`0.2_data_pre_processing/`](0.2_data_pre_processing/).
 
 ## Data visualization
 
@@ -65,7 +65,7 @@ Code and results are in `0.2_data_pre_processing/`.
 |---|---|
 | ![](0.3_data_analysis/plot4d_species_benchmarking_pos.png) | ![](0.3_data_analysis/plot4d_species_benchmarking_neg.png) |
 
-Code and results are in `0.3_data_analysis/`.
+Code and results are in [`0.3_data_analysis/`](0.3_data_analysis/).
 
 ## von Heijne method for signal-peptide detection
 
@@ -135,7 +135,7 @@ $$\theta_{\text{final}} = \frac{6.568 + 5.691 + 5.964 + 6.576 + 6.445}{5} = \mat
 | **+1** | 0.70 | -0.38 | -0.30 | 0.20 | 0.36 | 0.79 | 0.02 | -0.15 | 0.20 | -0.64 | -0.06 | -0.22 | -0.51 | -0.06 | -1.81 | 0.09 | -0.14 | 0.09 | -0.05 | -0.34 |
 | **+2** | -0.57 | 0.06 | -0.10 | 0.20 | 0.36 | 0.22 | 0.37 | -0.19 | 0.07 | -0.64 | -0.75 | -0.17 | -1.69 | -0.37 | **1.09** | 0.41 | 0.01 | -0.36 | -0.05 | -0.25 |
 
-Code and results are in `0.4_Von_Heijne/`.
+Code and results are in [`0.4_Von_Heijne/`](0.4_Von_Heijne/).
 
 
 ## SVM method for signal-peptide detection
@@ -228,4 +228,4 @@ Paired comparison of the test MCC on the same folds:
 
 Once the approach was validated, the definitive model (`D24_svm_final_model.pkl.gz`) was trained on the **whole training set**, with hyper-parameters chosen by cross-validation on all 5 subsets: *n* = 22, *k* = 24, C = 1, γ = 1/k; all 24 features are retained. The D = 24 model was selected as the final model before the benchmark evaluation, so that the benchmark remains an unbiased estimate of its performance.
 
-Code and results are in `0.5_feature_selection_svm/`.
+Code and results are in [`0.5_feature_selection_svm/`](0.5_feature_selection_svm/).
