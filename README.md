@@ -80,10 +80,12 @@ By sliding this scoring window across the first 90 N-terminal residues of a targ
 
 ## 5-Fold Cross-Validation Workflow
 
-To calibrate the decision threshold and evaluate classification performance without data leakage, a 5-fold cross-validation scheme was performed. For each run (1,2,3,4,5):
+To evaluate the classification performance without data leakage, a 5-fold cross-validation scheme was performed. For each run (1,2,3,4,5):
 - **Training (3 folds, 60%):** Cleavage contexts of positive sequences were used to build a fold-specific PSWM.
 - **Validation (1 fold, 20%):** Scored with the PSWM to determine the optimal decision threshold by maximizing the $F_1$-score on the Precision-Recall curve.
 - **Test (1 fold, 20%):** Evaluated strictly on unseen sequences using the calibrated threshold to compute test metrics.
+
+The threshold of the final model is calibrated separately (see *Final PSWM Model*).
 
 ### Cross-Validation Performance
 
