@@ -226,6 +226,6 @@ Paired comparison of the test MCC on the same folds:
 
 ## Final SVM Model
 
-Once the approach was validated, the definitive model (`D24_svm_final_model.pkl.gz`) was trained on the **whole training set**, with hyper-parameters chosen by cross-validation on all 5 subsets: *n* = 22, *k* = 24, C = 1, γ = 1/k; all 24 features are retained. The D = 24 model was selected as the final model before the benchmark evaluation, so that the benchmark remains an unbiased estimate of its performance.
+Once the approach was validated, the definitive model (`svm_final_model.pkl.gz`) was trained on the **whole training set**, with hyper-parameters chosen by cross-validation on all 5 subsets: *n* = 22, *k* = 24, C = 1, γ = 1/k; all 24 features are retained. The D = 24 model was selected as the final model before the benchmark evaluation, so that the benchmark remains an unbiased estimate of its performance.
 
 Code and results are in [`0.5_feature_selection_svm/`](0.5_feature_selection_svm/).
