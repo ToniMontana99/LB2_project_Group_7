@@ -14,7 +14,7 @@ from sklearn.svm import SVC
 
 # 0 - SETTINGS AND DATA CHECK 
 
-TRAINING_FILE = "training_5folds.tsv"
+TRAINING_FILE = "../0.4_Von_Heijne/training_5folds.tsv"
 AMINO_ACIDS = list("ARNDCQEGHILKMFPSTWYV")
 
 # Kyte-Doolittle hydropathy scale (same values as Bio.SeqUtils.ProtParamData.kd)
