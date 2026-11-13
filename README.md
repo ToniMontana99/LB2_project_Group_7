@@ -112,7 +112,7 @@ The summary of test metrics across all 5 runs ($\text{mean} \pm \text{standard e
 
 ## Final PSWM Model
 
-The decision threshold was fixed on a single validation fold: a calibration matrix was built on the positives of folds 0–3 and the threshold (6.334) was set at the maximum F1 of the precision-recall curve on fold 4. Once the threshold was fixed, the definitive matrix (`pswm_final.tsv`) was retrained on all the **positive training contexts** to reduce statistical noise for rare amino acids.
+The decision threshold was fixed on a single validation fold: a calibration matrix was built on the positives of folds 0-3 and the threshold (6.334) was set at the maximum F1 of the precision-recall curve on fold 4. Once the threshold was fixed, the definitive matrix (`pswm_final.tsv`) was retrained on all the **positive training contexts** to reduce statistical noise for rare amino acids.
 The mean of the five thresholds obtained in the cross-validation (6.2488) is not used for the final model.
 
 $$\bar{\theta}_{\text{CV}} = \frac{6.568 + 5.691 + 5.964 + 6.576 + 6.445}{5} = \mathbf{6.2488}$$
